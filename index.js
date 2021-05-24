@@ -31,5 +31,6 @@ walkHome,
 unleashDog];
 
 function exerciseDog(dogName, dogBreed) {
-    return routine.map(dogName, dogBreed);
+    return routine.map(x => x(dogName, dogBreed));
 }
+
